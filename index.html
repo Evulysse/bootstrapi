@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,17 +19,39 @@
             Part 1: Random Dog Generator
         </h1>
         <div class="api-content">
-            [INSERT RANDOM DOG GENERATOR HERE]
+		<div class="card" style="width:50%;">
+		
+			<div class="card-body">
+				<button id="generate" type="button" class="btn btn-primary">Random Dog Generator</button>
+			</div>
+			<img id="imgsrc" src="" class="card-img-top" width="500" height="300">
+
         </div>
     </div>
+	
+	</div>
 
     <div class="api-section">
         <h1>
             Part 2: Weather App
         </h1>
         <div class="api-content">
-            [INSERT WEATHER APP HERE]
-        </div>
+			<form>
+			<div class="mb-3">
+				<label for="city" class="form-label">City</label>
+				<input type="text" class="form-control" id="city" >
+			</div>
+  
+			<button id="submit" type="button" class="btn btn-primary">Submit</button>
+			</form>    
+
+			 <div >Temperature: <label id="temperature"></div>
+			 <div >Wind: <label id="wind" ></div>
+             <div >Description: <label id="description"></div>
+             <div >Forecast: <label id="forecast"></div>
+			 
+	</div>
+
     </div>
 
     <script src="main.js"></script>
